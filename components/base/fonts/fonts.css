@@ -1,0 +1,11 @@
+/* >>> Fonts Declaration for the site <<< */
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --base-font-size: 16px;
+  /* font size variable for font in pixel (very large and verysmall font size) */
+  font-size: var(--base-font-size);
+}
+
+body {
+  font-family: var(--primary-font);
+}
