@@ -1,0 +1,108 @@
+/******************************
+Flexbox Layout
+*******************************/
+
+.header,
+.nav {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.header {
+  justify-content: space-between;
+}
+
+.nav {
+  -webkit-flex: 1;
+  flex: 1;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  margin: 0;
+  align-items: center;
+}
+
+@media all and (min-width: 640px) {
+
+  .header,
+  .nav {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 1030px) {
+  .nav {
+    -webkit-flex: none;
+    flex: none;
+  }
+}
+
+
+/******************************
+Treehouse Styling
+*******************************/
+
+body {
+  margin: 0;
+  font-family: Helvetica;
+  background-size: cover;
+}
+
+.header {
+  position: fixed;
+  inset: 0;
+  padding: 20px 0;
+  margin: 0 auto;
+  height: 100px;
+  z-index: 10;
+}
+
+.logo {
+  background: transparent url('img/eggo-header.svg') center center no-repeat;
+  width: 140px;
+  background-size: contain;
+  height: auto;
+  font-size: 0;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  margin: 12px 0 12px 28px;
+}
+
+.nav li a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav li a:hover {
+  color: rgba(var(--tc-c2), 0.7);
+}
+
+.nav li.active a {
+  background: rgba(var(--tc-c2), 0.3);
+  border-radius: 2px;
+  transition: 200ms ease-in-out;
+  padding: 8px 16px 7px;
+}
+
+.nav li.active a:hover {
+  background: rgba(var(--tc-c2), 0.5);
+  color: var(--white);
+}
+
+/* @media all and (min-width: 1030px) {
+  .header {
+    width: 1030px;
+    min-width: 768px;
+  }
+}
+ */
