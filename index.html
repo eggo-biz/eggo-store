@@ -20,42 +20,234 @@
 <link rel="stylesheet" href="./components/base/containers/containers--min-1600.css">
 <link rel="stylesheet" href="./components/base/containers/containers--min-1900.css">
 <link rel="stylesheet" href="./components/base/variables/colors.css">
+<link rel="stylesheet" href="./components/base/classes/classes.css">
 <link rel="stylesheet" href="./components/base/fonts/fonts.css">
 <link rel="stylesheet" href="./components/base/reset.css">
 <link rel="stylesheet" href="./components/base/base.css">
+<!-- // elements -->
+<link rel="stylesheet" href="./components/elements/buttons/buttons.css">
+<link rel="stylesheet" href="./components/elements/cards/product-card/product-card.css">
+<!-- // End of elements -->
 <!-- // End of Base theme styles -->
 <!-- // Header -->
 <link rel="stylesheet" href="./components/layouts/header/header.css">
 <!-- // End of Header -->
+<!-- // Footer -->
+<link rel="stylesheet" href="./components/layouts/footer/footer.css">
+<!-- // End of Footer -->
 <!-- // Banner -->
 <link rel="stylesheet" href="./components/layouts/banners/home-banner/home-banner.css">
 <!-- // End of Banner -->
+<!-- // Home -->
+<link rel="stylesheet" href="./libraries/aos/aos.css">
+<link rel="stylesheet" href="./components/elements/site-loader/site-loader.css">
+<link rel="stylesheet" href="./components/pages/other/home/home.css">
+<!-- // End of Home -->
 <!-- [[ End of Styles ]] -->
 
 <body>
-  <!-- [[ Header ]] -->
-  <header class="header container">
-    <h1 class="logo">Eggo</h1>
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </header>
-  <!-- [[ End of Header ]] -->
-  <!-- [[ Banner ]] -->
-  <div class="banner home-banner">
-    <div class="banner-img">
-      <img class="banner-img" src="./img/home/hero-banner-1920-1080.jpg" alt="eggo-banner">
+  <div id="app">
+    <div class="responsive">
+      <div class="animated-background"></div>
+      <div class="container">
+        <div class="logo-img"><img src="./components/layouts/header/img/eggo-header.svg" alt="Eggo Logo"></div>
+        <h1>Stay tuned!</h1>
+        <p>We're working on responsive device, </p>
+        <p>please check desktop version. </p>
+      </div>
     </div>
-    <div class="banner-content container">
-      <h2 class="banner-title">Fresh Eggs</h2>
-      <!-- <p class="banner-desc">Discover the taste of premium, locally sourced eggs.</p> -->
-      <!-- <a class="shop-now-btn btn" href="#">Shop Now</a> -->
+    <div class="desktop">
+      <!-- [[ Header ]] -->
+      <header class="site-header header">
+        <div class="site-header-container container">
+          <h1 class="logo">Eggo</h1>
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <!-- [[ End of Header ]] -->
+      <!-- [[ Banner ]] -->
+      <div class="banner home-banner">
+        <div class="banner-img">
+          <img class="banner-img" src="./img/home/hero-banner-1920-1080.jpg" alt="eggo-banner">
+        </div>
+        <div class="banner-content container">
+          <h2 class="banner-title">Fresh Eggs</h2>
+          <div class="down-arrow animated">
+
+            <div class="circle circle-top"></div>
+            <div class="circle circle-main"></div>
+            <div class="circle circle-bottom"></div>
+
+            <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+              <defs>
+                <clipPath id="cut-off-arrow">
+                  <circle cx="306" cy="306" r="287"></circle>
+                </clipPath>
+
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                    result="goo"></feColorMatrix>
+                  <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+
+              </defs>
+              <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z"></path>
+            </svg>
+          </div>
+          <!-- <p class="banner-desc">Discover the taste of premium, locally sourced eggs.</p> -->
+          <!-- <a class="shop-now-btn btn" href="#">Shop Now</a> -->
+        </div>
+      </div>
+      <!-- [[ End of Banner ]] -->
+      <!-- [[ Products Section ]] -->
+      <div class="products-sec card-section pad-top-70 pad-bottom-70">
+        <div class="container">
+          <div class="section-title products-title">
+            Products
+          </div>
+          <div class="products-container">
+            <div class="each-product">
+              <div class="card">
+                <div class="card-box">
+                  <div class="card-head bg-c2">
+                    <div class="card-title">
+                      Country Eggs
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img width="350px" height="350px" src="./img/home/products/country-egg.png" alt="country eggs">
+                  </div>
+                  <div class="card-content">
+                    <div class="card-price">
+                      ₹200.00
+                    </div>
+                    <a class="add-to-cart" href="#">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="each-product">
+              <div class="card">
+                <div class="card-box">
+                  <div class="card-head bg-c3">
+                    <div class="card-title">
+                      Leghorn Eggs
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img width="350px" height="350px" src="./img/home/products/leghorn-egg.png" alt="leghorn eggs">
+                  </div>
+                  <div class="card-content">
+                    <div class="card-price">
+                      ₹165.00
+                    </div>
+                    <a class="add-to-cart" href="#">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="each-product">
+              <div class="card">
+                <div class="card-box">
+                  <div class="card-head bg-c4">
+                    <div class="card-title">
+                      Duck Eggs
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img width="350px" height="350px" src="./img/home/products/duck-egg.png" alt="duck eggs">
+                  </div>
+                  <div class="card-content">
+                    <div class="card-price">
+                      ₹230.00
+                    </div>
+                    <a class="add-to-cart" href="#">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="each-product">
+              <div class="card">
+                <div class="card-box">
+                  <div class="card-head bg-c5">
+                    <div class="card-title">
+                      Quail Eggs
+                    </div>
+                  </div>
+                  <div class="card-img">
+                    <img width="350px" height="350px" src="./img/home/products/quail-egg.png" alt="quail eggs">
+                  </div>
+                  <div class="card-content">
+                    <div class="card-price">
+                      ₹150.00
+                    </div>
+                    <a class="add-to-cart" href="#">Add to cart</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [[ End of Products Section ]] -->
+      <!-- [[ Footer ]] -->
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-about">
+              <h6>About US</h6>
+              <p class="text-justify">We are committed to providing the freshest highest quality eggs directly from
+                our
+                store to your table. Our passion is delivering excellence in every egg we sell.</p>
+            </div>
+            <div class="footer-contact-us">
+
+            </div>
+            <div class="footer-section company-info">
+              <ul class="footer-links">
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <div class="footer-copy-right">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+                <a href="#">Scanfcode</a>.
+              </p>
+            </div>
+            <ul class="social-icons">
+              <li><a class="facebook" href="#">Facebbok</a></li>
+              <li><a class="instagram" href="#">Instagram</a></li>
+              <li><a class="youtube" href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </footer>
+      <!-- [[ End of Footer ]] -->
     </div>
   </div>
-  <!-- [[ End of Banner ]] -->
+  <script src="./libraries/jquery/jquery.min.js"></script>
+  <script src="./libraries/aos/aos.js"></script>
+  <script src="./components/pages/common/global.js"></script>
+  <script src="./components/elements/site-loader/site-loader.js"></script>
+  <script src="./components/layouts//header/header.js"></script>
+  <script src="./components/layouts/banners/home-banner/home-banner.js"></script>
+  <script src="./components/pages/other/home/home-animation.js"></script>
+  <script src="./components/pages/other/home/home.js"></script>
 </body>
 
 </html>

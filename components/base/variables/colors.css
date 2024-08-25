@@ -1,6 +1,17 @@
 :root {
+  --primary: #e3aa04;
   --white: #fff;
   --black: #000;
+  /* background color */
+  --bg-c1: #f2f2f2;
+  --bg-c2: #9b7b5f;
+  --bg-c3: #b6aea5;
+  --bg-c4: #ac927c;
+  --bg-c5: #64493b;
+  --bg-c6: #858588;
+  --bg-c7: #33353d;
+  /* border color */
+  --br-c1: #bbb;
   /* font color */
   --fc-c1: #301e02;
   /* transparent color */

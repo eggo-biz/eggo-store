@@ -1,0 +1,50 @@
+.section-title {
+  font-size: 2.7rem;
+  font-weight: 400;
+  color: var(--secondary);
+  margin-bottom: 25px;
+}
+
+.bg-c1 {
+  background: var(--bg-c1);
+}
+
+.bg-c2 {
+  background: var(--bg-c2);
+}
+
+.bg-c3 {
+  background: var(--bg-c3);
+}
+
+.bg-c4 {
+  background: var(--bg-c4);
+}
+
+.bg-c5 {
+  background: var(--bg-c5);
+}
+
+.pad-top-50 {
+  padding-top: 50px;
+}
+
+.pad-bottom-50 {
+  padding-bottom: 50px;
+}
+
+.pad-top-70 {
+  padding-top: 70px;
+}
+
+.pad-bottom-70 {
+  padding-bottom: 70px;
+}
+
+.pad-top-100 {
+  padding-top: 100px;
+}
+
+.pad-bottom-100 {
+  padding-bottom: 100px;
+}

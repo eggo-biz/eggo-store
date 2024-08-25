@@ -28,10 +28,10 @@
   width: 100%;
   z-index: 2;
   align-items: center;
-  margin-bottom: 50px;
   /* perspective: 350px;
   perspective-origin: center; */
   perspective: 1000px;
+  padding-bottom: 30px;
 }
 
 .banner-title {
