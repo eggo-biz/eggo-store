@@ -1,0 +1,55 @@
+.spin-input-field::-webkit-outer-spin-button,
+.spin-input-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.spin-input {
+  --spin-input-lr-padding: 25px;
+  --spin-input-min-height: 30px;
+  --spin-input-max-width: 35px;
+}
+
+.spin-input-field {
+  /* For Firefox */
+  -moz-appearance: textfield;
+  padding: 5px var(--spin-input-lr-padding);
+  max-width: var(--spin-input-max-width);
+  text-align: center;
+  border-radius: 8px;
+  border: 0.5px solid var(--black);
+}
+
+.spin-input-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--black);
+  transition: all 0.3s ease;
+  min-width: var(--spin-input-lr-padding);
+  min-height: var(--spin-input-min-height);
+}
+
+.spin-input {
+  position: relative;
+}
+
+.spin-input-minus {
+  left: 0;
+}
+
+.spin-input-plus {
+  right: 0;
+}
+
+.reached-min .spin-input-minus,
+.reached-max .spin-input-plus {
+  opacity: 0.3;
+  pointer-events: none;
+}

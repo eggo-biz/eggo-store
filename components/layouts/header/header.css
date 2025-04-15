@@ -1,87 +1,55 @@
-/******************************
-Flexbox Layout
-*******************************/
+body {
+  --header-height: 90px;
+  --header-logo-height: 60px;
+  --header-transition: all 0.7s ease;
+}
 
-.site-header,
-.nav {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+body.animate-header {
+  --header-height: 60px;
+  --header-logo-height: 50px;
 }
 
 .site-header {
-  transition: all 0.3s ease;
-  justify-content: space-between;
-  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  padding: 4px 0;
+  margin: 0 auto;
+  z-index: 10;
+  transition: all 0.7s ease;
+  height: var(--header-height);
+  box-sizing: border-box;
 }
 
 .animate-header .site-header {
   background-color: var(--primary);
-  height: 60px;
 }
 
 .site-header-container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-}
-
-.nav {
-  -webkit-flex: 1;
-  flex: 1;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  margin: 0;
   align-items: center;
-}
-
-@media all and (min-width: 640px) {
-
-  .site-header,
-  .nav {
-    -webkit-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media all and (min-width: 1030px) {
-  .nav {
-    -webkit-flex: none;
-    flex: none;
-  }
-}
-
-
-/******************************
-Treehouse Styling
-*******************************/
-
-body {
-  margin: 0;
-  font-family: Helvetica;
-  background-size: cover;
-}
-
-.site-header {
-  position: fixed;
-  inset: 0;
-  padding: 4px 0;
-  margin: 0 auto;
-  height: 100px;
-  z-index: 10;
+  align-content: center;
+  width: 100%;
 }
 
 .logo {
   background: transparent url('img/eggo-header.svg') center center no-repeat;
   width: 140px;
+  height: var(--header-logo-height);
   background-size: contain;
-  height: auto;
   font-size: 0;
+  transition: var(--header-transition);
 }
 
 .nav {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  margin: 0;
 }
 
 .nav li {
@@ -111,11 +79,3 @@ body {
   background: rgba(var(--tc-c2), 0.5);
   color: var(--white);
 }
-
-/* @media all and (min-width: 1030px) {
-  .site-header {
-    width: 1030px;
-    min-width: 768px;
-  }
-}
- */

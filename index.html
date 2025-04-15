@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="./components/base/base.css">
 <!-- // elements -->
 <link rel="stylesheet" href="./components/elements/buttons/buttons.css">
+<link rel="stylesheet" href="./components/elements/spin-input/spin-input.css">
 <link rel="stylesheet" href="./components/elements/cards/product-card/product-card.css">
 <!-- // End of elements -->
 <!-- // End of Base theme styles -->
@@ -43,6 +44,9 @@
 <link rel="stylesheet" href="./components/elements/site-loader/site-loader.css">
 <link rel="stylesheet" href="./components/pages/other/home/home.css">
 <!-- // End of Home -->
+<!-- // Cart Layout -->
+<link rel="stylesheet" href="./components/layouts/cart/cart.css">
+<!-- // End of Cart Layout -->
 <!-- [[ End of Styles ]] -->
 
 <body>
@@ -116,90 +120,22 @@
             Products
           </div>
           <div class="products-container">
-            <div class="each-product">
-              <div class="card">
-                <div class="card-box">
-                  <div class="card-head bg-c2">
-                    <div class="card-title">
-                      Country Eggs
-                    </div>
-                  </div>
-                  <div class="card-img">
-                    <img width="350px" height="350px" src="./img/home/products/country-egg.png" alt="country eggs">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-price">
-                      ₹200.00
-                    </div>
-                    <a class="add-to-cart" href="#">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="each-product">
-              <div class="card">
-                <div class="card-box">
-                  <div class="card-head bg-c3">
-                    <div class="card-title">
-                      Leghorn Eggs
-                    </div>
-                  </div>
-                  <div class="card-img">
-                    <img width="350px" height="350px" src="./img/home/products/leghorn-egg.png" alt="leghorn eggs">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-price">
-                      ₹165.00
-                    </div>
-                    <a class="add-to-cart" href="#">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="each-product">
-              <div class="card">
-                <div class="card-box">
-                  <div class="card-head bg-c4">
-                    <div class="card-title">
-                      Duck Eggs
-                    </div>
-                  </div>
-                  <div class="card-img">
-                    <img width="350px" height="350px" src="./img/home/products/duck-egg.png" alt="duck eggs">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-price">
-                      ₹230.00
-                    </div>
-                    <a class="add-to-cart" href="#">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="each-product">
-              <div class="card">
-                <div class="card-box">
-                  <div class="card-head bg-c5">
-                    <div class="card-title">
-                      Quail Eggs
-                    </div>
-                  </div>
-                  <div class="card-img">
-                    <img width="350px" height="350px" src="./img/home/products/quail-egg.png" alt="quail eggs">
-                  </div>
-                  <div class="card-content">
-                    <div class="card-price">
-                      ₹150.00
-                    </div>
-                    <a class="add-to-cart" href="#">Add to cart</a>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
       <!-- [[ End of Products Section ]] -->
+      <!-- [[ Carts Section ]] -->
+      <div class="cart-sec">
+        <a class="cart-bubble" href="#">Cart Bubble</a>
+        <div class="cart-panel">
+          <div class="cart-panel-box">
+            <a class="cart-panel-close" href="#">X</a>
+            <div id="cart-items" class="pad-top-70 pad-bottom-70 container">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- [[ End of Carts Section ]] -->
       <!-- [[ Footer ]] -->
       <!-- Site footer -->
       <footer class="site-footer">
@@ -207,7 +143,7 @@
           <div class="footer-top">
             <div class="footer-about">
               <h6>About US</h6>
-              <p class="text-justify">We are committed to providing the freshest highest quality eggs directly from
+              <p class="text-justify">We are committed to providing the freshest high quality eggs directly from
                 our
                 store to your table. Our passion is delivering excellence in every egg we sell.</p>
             </div>
@@ -224,8 +160,8 @@
           </div>
           <div class="footer-bottom">
             <div class="footer-copy-right">
-              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                <a href="#">Scanfcode</a>.
+              <p class="copyright-text">Copyright &copy; 2025 All Rights Reserved by
+                <a href="/">Eggo</a>.
               </p>
             </div>
             <ul class="social-icons">
@@ -242,12 +178,19 @@
   </div>
   <script src="./libraries/jquery/jquery.min.js"></script>
   <script src="./libraries/aos/aos.js"></script>
+  <script src="./components/elements/spin-input/spin-input.js"></script>
+  <script src="./components/helpers/store/store.js"></script>
   <script src="./components/pages/common/global.js"></script>
+  <script src="./components/pages/common/init-plugins.js"></script>
   <script src="./components/elements/site-loader/site-loader.js"></script>
   <script src="./components/layouts//header/header.js"></script>
   <script src="./components/layouts/banners/home-banner/home-banner.js"></script>
   <script src="./components/pages/other/home/home-animation.js"></script>
+  <script src="./components/pages/other/home/products/products.js"></script>
+  <script src="./components/elements/cards/product-card/product-card.js"></script>
+  <script src="./components/layouts/cart/cart.js"></script>
   <script src="./components/pages/other/home/home.js"></script>
+  <script src="./components/pages/common/page.js"></script>
 </body>
 
 </html>

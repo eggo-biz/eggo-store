@@ -1,0 +1,54 @@
+.cart-sec .cart-bubble {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1;
+}
+
+.has-items .cart-bubble {
+  display: flex;
+}
+
+.cart-panel {
+  position: fixed;
+  top: var(--header-height);
+  right: -100%;
+  width: 100%;
+  bottom: 0;
+  z-index: 12;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgba(var(--tc-c1), 0.6);
+  transition: var(--header-transition), right 0.7s ease;
+}
+
+.cart-panel.active {
+  display: flex;
+  right: 0;
+}
+
+#cart-items {
+  padding: 40px 35px;
+  background: var(--white);
+  min-height: 350px;
+}
+
+.cart-panel-box {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+}
+
+.cart-panel-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
